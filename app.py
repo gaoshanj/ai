@@ -1,4 +1,3 @@
-# app.py
 import os
 from flask import Flask, render_template, request, redirect, url_for
 import openai
@@ -6,8 +5,8 @@ import openai
 app = Flask(__name__)
 
 openai.api_type = "azure"
-openai.api_base = "https://ai-hackaton-eirik.openai.azure.com/"
-openai.api_version = "2023-06-01-preview"
+openai.api_base = os.getenv("OPENAI_API_URL")
+openai.api_version = os.getenv("OPENAI_API_VERSION")
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @app.route('/', methods=['GET', 'POST'])

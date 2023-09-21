@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DALL-E 2 Image Generator</title>
+  </head>
+  <body>
+    <h1>DALL-E 2 Image Generator</h1>
+    <form action="/" method="post">
+      <label for="prompt">Enter Image Description:</label><br />
+      <input type="text" id="prompt" name="prompt" /><br /><br />
+      <input type="submit" value="Generate Image" />
+    </form>
+    <br />
+    {% if image_url %}
+    <img src="{{ image_url }}" alt="Generated Image" width="512" height="512" />
+    {% endif %}
+  </body>
+</html>

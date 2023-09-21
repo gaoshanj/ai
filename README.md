@@ -15,7 +15,7 @@ git clone [YOUR_REPOSITORY_LINK]
 
 ### 2. Install dependencies
 
-pip install Flask OpenAI
+``pip install Flask OpenAI``
 
 ### 3. Obtain Azure OpenAI API Key and URL
 

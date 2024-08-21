@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'gaoshan'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_49AFB8BF87844E73B0BB47B91858B534 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_05541DB428DC4A829523BCB500D6D8DA }}
